@@ -1,0 +1,94 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    margin-bottom: 30px;
+  }
+  
+  .user-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+  }
+  
+  .user-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff0000;
+  }
+  
+  .chart-container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    display: flex;           /* Flexbox özelliğini aç */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center;     /* Dikeyde ortala */
+    min-height: 300px;       /* Minimum yükseklik belirle (isteğe bağlı) */
+}

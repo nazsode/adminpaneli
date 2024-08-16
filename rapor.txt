@@ -1,0 +1,28 @@
+Kullandığınız teknolojiler ve yaklaşımınız hakkında kısa bir açıklama.
+
+--Projede backend için Node.js kullandım. Frontend için ise React kullandım. Ayrıca belirtilen istekler doğrultusunda JWT, CORS, bcrypt gibi teknolojilerden de yardım aldım.
+
+1. Proje geliştirme sürecinde karşılaştığınız en büyük teknik zorluk neydi?
+
+--Projeyi geliştirirken karşılaştığım en büyük teknik zorluk, endpointlerde yaşadığım ufak bir karışıklıktı. Onu da yaklaşık yarım saatte çözüme kavuşturdum.
+
+2. Bu sorunu nasıl tespit ettiniz? (Örneğin, hata mesajları, beklenmeyen davranışlar, performans sorunları vb.)
+
+--Bu sorunu çözerken hem console loglarından hem de tarayıcımın "Ögeyi denetler" özelliğinden yardım aldım.
+
+3. Sorunu çözmek için hangi adımları attınız? Lütfen düşünce sürecinizi ve denediğiniz farklı yaklaşımları açıklayın.
+
+--Sorunu çözmek için, farklı işlemler için oluşturduğum farklı endpointleri önce bir düzene soktum. Sonrasında hangi endpointi projenin neresinde kullanmam gerektiğini denedim ve sonunda çözdüm.
+
+4. Sonunda sorunu nasıl çözdünüz? Çözümünüzün arkasındaki mantığı kısaca açıklayın.
+
+-Çözümümün arkasındaki mantık, en sade endpointi en temelde kullanmak ve ardından yapılacak CRUD işlemine göre spesifik endpointleri olmaları gereken yerlere yerleştirmekti.
+
+5. Bu deneyimden ne öğrendiniz? Gelecekte benzer sorunlardan kaçınmak için ne gibi önlemler alabilirsiniz?
+
+--Bu deneyimden genel olarak JWT ve CORS'u bir arada kullanmayı ve bir veritabanını nasıl daha verimli kullanacağımı öğrendim. Bu gibi sorunlardan kaçınmak için alacağım önlem ise her şeyi basitten karmaşığa doğru ilerletmek olacak.
+
+6. Eğer bu sorun için dokümantasyon yazmak zorunda kalsaydınız, diğer geliştiricilere sorunu ve çözümünü nasıl açıklardınız?
+
+--Öncelikle geliştiricilere, endpointlerin karmaşık yapılar olduğunu açıklardım. Bunun çözümünü ise her endpointte yapılması gereken fonksiyonlar olduğunu, bunun da bir eşleşme mantığında olduğunu söyleyerek açıklardım.
+
