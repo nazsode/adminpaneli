@@ -12,7 +12,7 @@ router.post('/login', userController.loginUser);
 // Route to Fetch Users (Public)
 router.get('/users', userController.getUsers);
 
-// Route to Fetch Current User's Data (Protected)
+// Route to Fetch Current User's Data (Protected) so we use 'authenticate'
 router.get('/me', authenticate, userController.getCurrentUser);
 
 // Route to Update User (Protected)

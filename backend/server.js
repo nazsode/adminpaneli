@@ -8,19 +8,19 @@ app.use(express.json());
 
 
 
-app.use(cors({ origin: 'http://localhost:3000' })); // Frontend uygulamanızın portunu belirtin
+app.use(cors({ origin: 'http://localhost:3000' })); // Frontendin portu 
 
 
-// Connect to MongoDB
+//MongoDB
 mongoose.connect('mongodb://localhost:27017/adminpanel', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
 // Import routes
-const userRoutes = require('./routes/userRoutes'); // Ensure this path is correct
+const userRoutes = require('./routes/userRoutes'); 
 
 // Use user routes
-app.use('/api', userRoutes); // Routes should be mounted on '/api'
+app.use('/api', userRoutes); // Route'lar'/api' ile başlayacak
 
 // Handle invalid routes
 app.use((req, res, next) => {

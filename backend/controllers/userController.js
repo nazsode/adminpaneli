@@ -31,7 +31,7 @@ exports.loginUser = async (req, res) => {
 };
 
 // Get all users
-// Get all users
+
 exports.getUsers = async (req, res) => {
     try {
       const users = await User.find();
