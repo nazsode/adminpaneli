@@ -1,7 +1,7 @@
-// src/components/Register.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './register.css';  
 
 function Register() {
   const [name, setName] = useState('');
@@ -16,7 +16,7 @@ function Register() {
     try {
       await axios.post('http://localhost:5000/api/register', { name, email, password, role, status });
       alert('Registration successful');
-      // Commenting out automatic navigation to login page
+      // Böyle yaparsak otomatik olarak login'e gider
       // navigate('/login');
     } catch (error) {
       console.error('Registration failed:', error);
@@ -29,7 +29,7 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="register-container">
       <h1>Register</h1>
       <form onSubmit={handleSubmit}>
         <input

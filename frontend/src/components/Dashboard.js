@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
-import './Dashboard.css'; // Make sure to create this CSS file for styling
+import './Dashboard.css'; 
 
 function Dashboard() {
   const [userData, setUserData] = useState(null);

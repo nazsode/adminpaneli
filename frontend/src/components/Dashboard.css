@@ -1,94 +1,172 @@
+/* Ana Konteyner */
 .dashboard-container {
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-  }
-  
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Başlık */
+.dashboard-title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  margin-top: 180px;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* Hata Mesajı */
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Kullanıcı Bilgileri */
+.user-info {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* Kullanıcı Bilgileri Başlık */
+.user-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+/* Kullanıcı Bilgileri Paragrafları */
+.user-info p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+/* Kullanıcı Tablosu */
+.user-table {
+  width: 100%;
+  max-width: 1200px; 
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  overflow-x: auto; 
+}
+
+/* Tablo Hücreleri */
+.user-table th,
+.user-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Tablo Başlıkları */
+.user-table th {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* Tablo Satırları */
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Silme Butonu */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  display: block;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+}
+
+/* Grafik Konteyneri */
+.chart-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+/* Responsive Tasarım için Medya Sorguları */
+@media (max-width: 768px) {
   .dashboard-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 15px;
   }
-  
-  .error-message {
-    color: #e74c3c;
-    font-weight: bold;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .user-info {
-    margin-bottom: 30px;
-  }
-  
+
   .user-info h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #2980b9;
+    font-size: 1.5em;
   }
-  
-  .user-info p {
-    font-size: 1.2em;
-    margin: 5px 0;
-  }
-  
-  .user-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-  }
-  
+
   .user-table th,
   .user-table td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: left;
+    padding: 10px;
+    font-size: 0.9em;
   }
-  
-  .user-table th {
-    background-color: #3498db;
-    color: #fff;
-    font-size: 1.1em;
-  }
-  
-  .user-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .user-table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
+
   .delete-button {
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    padding: 6px 12px;
+    font-size: 0.9em;
   }
-  
-  .delete-button:hover {
-    background-color: #ff0000;
-  }
-  
+
   .chart-container {
-    width: 60%;
-    margin: 20px auto;
-    background-color: #fff;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    
-    display: flex;           /* Flexbox özelliğini aç */
-    justify-content: center; /* Yatayda ortala */
-    align-items: center;     /* Dikeyde ortala */
-    min-height: 300px;       /* Minimum yükseklik belirle (isteğe bağlı) */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .user-info h2 {
+    font-size: 1.3em;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .delete-button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
 }
